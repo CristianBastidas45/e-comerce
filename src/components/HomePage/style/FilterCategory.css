@@ -1,0 +1,24 @@
+.category-container{
+    max-width: 15em;
+    margin-bottom: 1em;
+}
+.category__title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #888a;
+    margin-bottom: 0.5em;
+}
+.category__item{
+    color: #555a;
+    background-color: #999a;
+    margin: 0.3em 0;
+    cursor: pointer;
+    border-radius: 0.8em;
+    padding: 0.1em 0.2em;
+}
+.category__item:hover{
+    transform: scale(1.02);
+}
+.item__selected{
+    background-color: #f85555;
+}

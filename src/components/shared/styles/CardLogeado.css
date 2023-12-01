@@ -1,0 +1,28 @@
+.logeado-container{
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logeado__header{
+    font-size: 4rem;
+}
+.logeado__name{
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+.logeado__btn{
+    width: 5em;
+    font-size: 1.4rem;
+    border: none;
+    background-color: #f85555;
+    color: white;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em 0.8em 0.2em 0.8em;
+}
+.logeado__btn:hover{
+    filter: brightness(1.2);
+}
+

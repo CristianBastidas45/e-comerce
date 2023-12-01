@@ -1,0 +1,31 @@
+.filter__price-container{
+    max-width: 15em;
+    margin-bottom: 1em;
+}
+.filterprice__form{
+    display: flex;
+    flex-direction: column;
+}
+.filter__price__title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #888a;
+    margin-bottom: 0.5em;
+}
+.filterprice__form__label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.filterprice__form__label_s{
+    color: #888a;
+}
+.filterprice__form__label_i{
+    max-width: 20em;
+    border: none;
+    background-color: #888a;
+    border-radius: 0.8em;
+    padding: 0.2em 0.5em;
+    color: white;
+}

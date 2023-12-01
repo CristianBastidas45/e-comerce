@@ -1,0 +1,30 @@
+.purchasecard-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+.purchasecard__header{
+    width: 20%;
+    height: 80px;
+}
+.purchasecard__header__img{
+    width:  80%;
+    height: 80%;
+    object-fit: contain; 
+}
+.purchasecard__title{
+    font-weight: 300;
+    font-size: 0.9rem;
+    width: 30%;
+}
+.purchasecard__quantity{
+    border: 1px solid #ccca;
+    width: 5%;
+    height: 50%;
+    text-align: center;
+    font-weight: 300;
+}
+.purchasecard__price::before{
+    content: '$';
+}

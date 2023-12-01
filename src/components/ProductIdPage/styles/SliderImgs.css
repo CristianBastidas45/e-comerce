@@ -1,0 +1,49 @@
+.slider{
+    width: 100%;
+    aspect-ratio: 1.5;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 1em;
+}
+.slider__btn{
+    position: absolute;
+    z-index: 1;
+    font-size: 1.5rem;
+    width: 2em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: #f85555;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__btn:hover{
+    filter: brightness(1.1);
+}
+.slider__prev{
+    left: 0;
+}
+.slider__next{
+    right: 0;
+}
+.slider__movable{
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 500ms ease;
+}
+.slider__img-container{
+    width: calc(100% / 3);
+    aspect-ratio: 1.5;
+    padding: 2em;
+}
+.slider__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

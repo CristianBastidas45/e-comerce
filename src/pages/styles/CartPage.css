@@ -1,0 +1,31 @@
+.cart-container{
+    width: 90vw;
+    margin: 0 auto;
+}
+.cart__products-container{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.cart__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.cart__footer__key{
+    color: #aaa;
+}
+.cart__footer__value{
+    font-size: 1.1rem;
+}
+.cart__footer__value::before{
+    content: '$';
+}
+.cart__footer__btn{
+    border: none;
+    background-color: #f85555;
+    color: white;
+    border-radius: 0.2em 0.8em 0.2em 0.8em;
+    padding: 0.2em 0.4em;
+    font-size: 1.1rem;
+}
