@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form"
 import useAuth from "../../hooks/useAuth"
 import './styles/FormRegister.css'
+import { useNavigate } from "react-router-dom"
 
 
 const FormRegister = () => {
@@ -8,9 +9,21 @@ const FormRegister = () => {
     const { register, handleSubmit, reset } = useForm()
 
     const { registerUser } = useAuth()
+    const navigate = useNavigate()
 
     const submit = data => {
-        registerUser(data)
+        const {firstName, lastName, email, password, phone} = data
+        if(firstName && lastName && email && password && phone){
+            registerUser(data);
+            reset({
+                firstName: '',
+                lastName: '',
+                email: '',
+                password: '',
+                phone: ''
+            })
+            navigate('/login')
+        }
     }
 
     return (

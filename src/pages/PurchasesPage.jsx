@@ -8,7 +8,7 @@ const PurchasesPage = () => {
     const [purchases, getPurchases] = useFetch()
 
     useEffect(()=>{
-        const url = 'https://e-commerce-api-v2.academlo.tech/api/v1/purchases'
+        const url = 'https://ecomerce-backend-6ch6.onrender.com/purchases'
         getPurchases(url, getConfigToken())
     },[])
 

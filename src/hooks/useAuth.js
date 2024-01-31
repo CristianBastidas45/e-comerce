@@ -3,14 +3,14 @@ import axios from "axios"
 const useAuth = () => {
 
     const registerUser = (user) =>{
-        const url = "https://e-commerce-api-v2.academlo.tech/api/v1/users" 
+        const url ="https://ecomerce-backend-6ch6.onrender.com/users"
         axios.post(url, user)
             .then(res => console.log(res.data))
             .catch(err => console.log(err))
     }
 
     const loginUser = (user) => {
-        const url = 'https://e-commerce-api-v2.academlo.tech/api/v1/users/login'
+        const url = 'https://ecomerce-backend-6ch6.onrender.com/users/login'
         axios.post(url,user)
             .then(res => {
                 console.log(res.data)

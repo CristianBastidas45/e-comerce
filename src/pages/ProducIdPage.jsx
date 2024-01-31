@@ -12,7 +12,7 @@ const ProducIdPage = () => {
   const [product, getProduct] = useFetch()
 
   useEffect(()=>{
-    const url = `https://e-commerce-api-v2.academlo.tech/api/v1/products/${id}`
+    const url = `https://ecomerce-backend-6ch6.onrender.com/products/${id}`
     getProduct(url)
   },[id])
 

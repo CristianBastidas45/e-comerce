@@ -17,7 +17,7 @@ export const {addToCart, removeFromCart,setCart,updateCart} = cartSlice.actions
 
 export default cartSlice.reducer
 
-const baseUrl='https://e-commerce-api-v2.academlo.tech/api/v1/cart'
+const baseUrl='https://ecomerce-backend-6ch6.onrender.com/cart'
 
 export const getCartThunk = () => (dispatch) => {
     const url = `${baseUrl}`

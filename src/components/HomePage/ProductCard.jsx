@@ -15,14 +15,19 @@ const ProductCard = ({product}) => {
 
   const handleAddCatr = e => {
     e.stopPropagation()
-    dispatch(addProductToCartThunk(product.id,1))
+    if(localStorage.getItem('token')){
+      dispatch(addProductToCartThunk(product.id,1))
+    }else{
+      navigate('/login')
+    }
+
   }
 
   return (
     <article className="product" onClick={handleNavigate}>
       <header className="product__header">
-        <img className="product__img product__img-1" src={product.images[0].url} alt="" />
-        <img className="product__img product__img-2" src={product.images[1].url} alt="" />
+        <img className="product__img product__img-1" src={product.images[0]?.url} alt="" />
+        <img className="product__img product__img-2" src={product.images[1]?.url} alt="" />
       </header>
       <section className="product__body">
         <h4 className="product__brand">{product.brand}</h4>
