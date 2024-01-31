@@ -13,14 +13,18 @@ const SimilarProduct = ({ categoryId, idProd }) => {
     }
   }, [categoryId])
 
-
+console.log(productsByCategory);
 
   return (
     <article>
       <h2>Similar products</h2>
       <div className="product-container">
         {
-          productsByCategory?.filter(prod => prod.id !== idProd).map(product => (
+          productsByCategory?.filter(prod => {
+            if(prod.id !== idProd && prod.categoryId === categoryId){
+              return prod
+            }
+          }).map(product => (
             <ProductCard
               key={product.id}
               product={product} />
