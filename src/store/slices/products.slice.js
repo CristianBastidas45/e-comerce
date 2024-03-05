@@ -14,7 +14,7 @@ export const {setProducts} = productsSlice.actions
 export default productsSlice.reducer
 
 export const getProductsThunk = () => (dispatch) =>{
-    const url = 'https://ecomerce-backend-6ch6.onrender.com/products'
+    const url = 'https://e-commerce-api-v2.academlo.tech/api/V1/products'
     axios.get(url)
         .then(res => dispatch(setProducts(res.data)))
         .catch(err => console.log(err))

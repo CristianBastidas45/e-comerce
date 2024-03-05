@@ -22,7 +22,7 @@ const CartPage = () => {
   },0)
 
   const handlePurchase = () => {
-    const url = 'https://ecomerce-backend-6ch6.onrender.com/purchases'
+    const url = 'https://e-commerce-api-v2.academlo.tech/api/V1/purchases'
     axios.post(url,'', getConfigToken())
       .then(res => {
         console.log(res.data)

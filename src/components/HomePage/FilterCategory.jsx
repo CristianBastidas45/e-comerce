@@ -7,7 +7,7 @@ const FilterCategory = ({categorySelected,setCategorySelected}) => {
   const [categories, getCategories] = useFetch();
 
   useEffect(()=>{
-    const url = 'https://ecomerce-backend-6ch6.onrender.com/categories'
+    const url = 'https://e-commerce-api-v2.academlo.tech/api/V1/categories'
     getCategories(url)
   },[])
 
